@@ -1,11 +1,11 @@
 # shiny-pancake
 
 ### Description
-This C script offers the possibility to analyze a video sequence in YUV format (based on the first two frames).
+This C script offers the possibility of analyzing a video sequence in YUV format (based on the first two frames).
 
-With these frames, the resulting images are divided into 16x16 blocks. The blocks in the 1st frame are searched in the 2nd frame and moved there. Afterwards the resulting motion vectors are saved in a file. With this a prediction image can be generated. Comparing the prediction image with the original second frame leads to a prediction error image. The MSE (Mean Squared Error) is then calculated with the prediction error image.
+With these frames, the resulting images are divided into 16x16 blocks. The blocks in the 1st frame are examined in the 2nd frame and moved there. Subsequently, the resulting motion vectors are saved in a file. With this, a prediction image can be generated. Comparing the prediction image with the original second frame leads to a prediction error image. The MSE (Mean Squared Error) is then calculated with the prediction error image.
 
-This script was executed with an American football sequence. Accordingly, all constants and buffers are designed for the dimensions of this file. In order to be able to analyze another sequence and to calculate the error patterns and the MSE from it, the constants and buffers must be adjusted accordingly.
+This script was executed with an American football sequence. Accordingly, all constants and buffers are designed for the dimensions of this file. To be able to analyze another sequence and calculate the error patterns and the MSE from it, the constants and buffers must be adjusted accordingly.
 
 
 ### Example
